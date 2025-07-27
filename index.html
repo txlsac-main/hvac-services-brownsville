@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Complete HVAC Services – Brownsville TX</title>
+<meta content="Complete HVAC services in Brownsville TX. AC repair, heating, installation, maintenance, and duct cleaning for residential and commercial properties." name="description"/>
+<meta name="google-site-verification" content="rcChVWkzUgzTv1yiIdd36fpoGMQfNXKK3Iu9MHDktvw" />
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: #041F3B;
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: #e5e7eb;
+            margin: 0;
+        }
+
+        .sponsor-line {
+            font-size: 0.8rem;
+            color: #9ca3af;
+            font-style: italic;
+            margin-top: 2px;
+        }
+
+        .header-contact {
+            display: none;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(4, 31, 59, 0.95), rgba(4, 31, 59, 0.95)), 
+                        linear-gradient(45deg, #041F3B, #CA130F);
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .hero .description {
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: #CA130F;
+            color: #FFFFFF;
+            box-shadow: 0 4px 15px rgba(202, 19, 15, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            background: #A00F0B;
+            box-shadow: 0 6px 20px rgba(202, 19, 15, 0.6);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: #041F3B;
+        }
+
+        /* Trust Indicators */
+        .trust-section {
+            background: white;
+            padding: 40px 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .trust-indicators {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+
+        .trust-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .trust-item i {
+            font-size: 2.5rem;
+            color: #041F3B;
+        }
+
+        .trust-item h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #041F3B;
+        }
+
+        .trust-item p {
+            font-size: 0.9rem;
+            color: #6b7280;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+            background: #f8fafc;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #041F3B;
+            margin-bottom: 15px;
+        }
+
+        .section-title p {
+            font-size: 1.1rem;
+            color: #6b7280;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .service-card i {
+            font-size: 3rem;
+            color: #CA130F;
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #041F3B;
+            margin-bottom: 15px;
+        }
+
+        .service-card p {
+            color: #6b7280;
+            margin-bottom: 20px;
+        }
+
+        .service-card .btn {
+            font-size: 1rem;
+            padding: 12px 25px;
+        }
+
+        /* Why Choose Us */
+        .why-choose {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .feature-item {
+            text-align: center;
+        }
+
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            background: #041F3B;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+
+        .feature-icon i {
+            font-size: 2rem;
+            color: white;
+        }
+
+        .feature-item h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #041F3B;
+            margin-bottom: 15px;
+        }
+
+        /* Emergency Section */
+        .emergency {
+            background: #CA130F;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .emergency h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .emergency p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .emergency-phone {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+        }
+
+        .emergency-phone:hover {
+            background: #041F3B;
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            background: #041F3B;
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+
+        .footer-section h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #FFFFFF;
+            margin-bottom: 20px;
+        }
+
+        .footer-section p, .footer-section li {
+            color: #d1d5db;
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section a {
+            color: #d1d5db;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: #fbbf24;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #374151;
+            margin-top: 40px;
+            padding-top: 20px;
+            text-align: center;
+            color: #9ca3af;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1.2rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .header-contact {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .emergency-phone {
+                font-size: 2rem;
+            }
+        }
+
+</style>
+<link href="https://txlsac-main.github.io/hvac-services-brownsville/" rel="canonical"/></head>
+<body>
+<!-- Header -->
+<header>
+<div class="container">
+<div class="header-content">
+        <div class="logo">
+           <p class="logo"><strong>Texas Lone Star AC & Heating LLC</strong></p>
+        </div>
+<div class="header-contact">
+</div>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="hero">
+<div class="container">
+        <h1>Fast, Reliable AC Help for Brownsville Homes & Businesses</h1>
+<p class="subtitle">Reliable HVAC Solutions</p>
+<p class="description">
+                When your air conditioning system needs repair in Brownsville TX, you want fast and reliable service. Professional HVAC technicians are available to help with all your cooling needs.
+            </p>
+            <div class="cta-buttons">
+                <a class="btn btn-secondary" href="#contact">
+                    <i class="fas fa-arrow-down"></i>
+                    Learn More
+                </a>
+            </div>
+</div>
+</section>
+<!-- Trust Indicators -->
+<section class="trust-section">
+<div class="container">
+<div class="trust-indicators">
+<div class="trust-item">
+<i class="fas fa-clock"></i>
+<h3>Fast Service</h3>
+<p>Quick response</p>
+</div>
+<div class="trust-item">
+<i class="fas fa-wrench"></i>
+<h3>Professional Repair</h3>
+<p>Skilled technicians</p>
+</div>
+<div class="trust-item">
+<i class="fas fa-home"></i>
+<h3>Local Service</h3>
+<p>Brownsville TX</p>
+</div>
+<div class="trust-item">
+<i class="fas fa-tools"></i>
+<h3>Quality Work</h3>
+<p>Reliable solutions</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="services" id="services">
+<div class="container">
+<div class="section-title">
+<h2>Complete HVAC Services</h2>
+<p>Professional heating and cooling services for residential and commercial properties in Brownsville TX.</p>
+</div>
+<div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <h3>Emergency AC Repair</h3>
+                    <p>24/7 emergency air conditioning repair service. Fast response for urgent cooling issues when you need it most.</p>
+                    <a href="https://www.txlonestaracandheating.com/24-hour-emergency-ac-heater-repair-brownsville-tx" class="btn btn-primary">Emergency Call</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-snowflake"></i>
+                    <h3>AC Installation</h3>
+                    <p>Professional installation of new air conditioning systems. Expert sizing and installation with warranty coverage.</p>
+                    <a href="https://www.txlonestaracandheating.com/brownsville/ac-installation-brownsville-tx" class="btn btn-primary">Get Quote</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>AC Maintenance</h3>
+                    <p>Regular maintenance programs to keep your AC running efficiently. Prevent breakdowns and extend system life.</p>
+                    <a href="https://www.txlonestaracandheating.com/brownsville/ac-maintenance-brownsville-tx" class="btn btn-primary">Schedule Service</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-fire"></i>
+                    <h3>Heater Repair</h3>
+                    <p>Expert heating system repair services. Fast diagnosis and repair of all types of heating equipment.</p>
+                    <a href="https://www.txlonestaracandheating.com/brownsville/heater-repair-brownsville-tx" class="btn btn-primary">Get Repair</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-thermometer-half"></i>
+                    <h3>Heater Installation</h3>
+                    <p>Professional heating system installation. New heater installation with proper sizing and energy efficiency.</p>
+                    <a href="https://www.txlonestaracandheating.com/brownsville/heater-installation-brownsville-tx" class="btn btn-primary">Get Quote</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-wind"></i>
+                    <h3>Duct Cleaning</h3>
+                    <p>Professional duct cleaning services. Improve air quality and system efficiency with thorough duct cleaning.</p>
+                    <a href="https://www.txlonestaracandheating.com/brownsville/duct-cleaning-brownsville-tx" class="btn btn-primary">Book Cleaning</a>
+                </div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="why-choose">
+<div class="container">
+        <div class="section-title">
+<h2>Why Choose Texas Lone Star AC & Heating</h2>
+<p>Professional HVAC technicians provide reliable service and expertise for all your heating and cooling needs.</p>
+</div>
+<div class="features-grid">
+<div class="feature-item">
+<div class="feature-icon">
+<i class="fas fa-user-graduate"></i>
+</div>
+<h3>Locally Certified AC Technicians</h3>
+<p>Our team consists of licensed, certified HVAC technicians with years of experience serving Brownsville homes and businesses.</p>
+</div>
+<div class="feature-item">
+<div class="feature-icon">
+<i class="fas fa-rocket"></i>
+</div>
+<h3>Same-Day Help for Local Homes</h3>
+<p>We provide same-day service and emergency repairs throughout Brownsville to get your AC working quickly.</p>
+</div>
+<div class="feature-item">
+<div class="feature-icon">
+<i class="fas fa-dollar-sign"></i>
+</div>
+<h3>Flat-Rate HVAC Pricing in Brownsville</h3>
+<p>Transparent, honest pricing with no hidden fees. You'll know the cost before we start work on your Brownsville property.</p>
+</div>
+<div class="feature-item">
+<div class="feature-icon">
+<i class="fas fa-award"></i>
+</div>
+<h3>Backed by Brownsville Reviews</h3>
+<p>We stand behind our work with a satisfaction guarantee, and our local Brownsville customers can vouch for our quality service.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Location Section -->
+<section class="why-choose" style="background: #f8fafc;">
+<div class="container">
+<div class="section-title">
+<h2>Serving Brownsville TX</h2>
+<p>Professional HVAC services throughout Brownsville TX area. Find us when you need reliable AC repair.</p>
+</div>
+<div style="text-align: center; margin-top: 40px;">
+<div class="feature-item">
+<div class="feature-icon">
+<i class="fas fa-map-marker-alt"></i>
+</div>
+<h3>Neighborhoods We Serve in Brownsville</h3>
+<p>We proudly serve every corner of Brownsville — from historic Downtown, the Sunrise Mall district, and the Boca Chica corridor, out to Los Fresnos, Southmost, and Valle Vista. Whether you're along Alton Gloor Road, Paredes Line Road, or near the Port of Brownsville, our HVAC team is ready to help.</p>
+<div style="margin-top: 25px;">
+<a class="btn btn-primary" href="https://www.google.com/maps?cid=1003965735745649222">
+<i class="fas fa-directions"></i>
+Get Directions
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Emergency Section -->
+<section class="emergency" id="contact">
+<div class="container">
+<h2>Need HVAC Service?</h2>
+<p>Brownsville HVAC techs are standing by 24/7 — don't wait. Professional technicians are available to help with all your heating, cooling, and air quality needs in Brownsville TX.</p>
+<a class="emergency-phone" href="https://www.txlonestaracandheating.com/texas-lone-star-ac-and-heating-llc">Contact Us</a>
+<p>Emergency service available when you need it most</p>
+</div>
+</section>
+
+<!-- Footer -->
+<footer>
+<div class="container">
+<div class="footer-content">
+<div class="footer-section">
+<h3>Service Information</h3>
+                <p style="font-size: 0.9rem; color: #9ca3af; font-style: italic;">Texas Lone Star AC & Heating LLC</p>
+                <p style="margin-top: 15px;"><a href="#" style="color: #9ca3af; font-size: 0.85rem;">Privacy Policy</a> | <a href="#" style="color: #9ca3af; font-size: 0.85rem;">Terms</a></p>
+</div>
+                <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#services">Emergency AC Repair</a></li>
+                    <li><a href="#services">AC Installation</a></li>
+                    <li><a href="#services">AC Maintenance</a></li>
+                    <li><a href="#services">Heater Repair</a></li>
+                    <li><a href="#services">Heater Installation</a></li>
+                    <li><a href="#services">Duct Cleaning</a></li>
+                </ul>
+</div>
+<div class="footer-section">
+                <h3>Get Service</h3>
+                <p><strong>Professional HVAC:</strong><br/>Available when needed</p>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2025 Texas Lone Star AC &amp; Heating LLC. All rights reserved.</p>
+</div>
+</div>
+</footer>
+
+<!-- Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://txlsac-main.github.io/hvac-services-brownsville/",
+  "name": "Complete HVAC Services Guide – Brownsville TX",
+  "description": "Complete HVAC services in Brownsville TX. AC repair, heating, installation, maintenance, and duct cleaning for residential and commercial properties.",
+  "sameAs": [
+    "https://www.google.com/maps?cid=1003965735745649222"
+  ],
+  "potentialAction": {
+    "@type": "ViewAction",
+    "target": "https://www.google.com/maps?cid=1003965735745649222"
+  }
+}
+</script>
+</body>
+</html> 
