@@ -626,17 +626,100 @@ Get Directions
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebPage",
-  "@id": "https://txlsac-main.github.io/hvac-services-brownsville/",
-  "name": "Complete HVAC Services Guide – Brownsville TX",
-  "description": "Complete HVAC services in Brownsville TX. AC repair, heating, installation, maintenance, and duct cleaning for residential and commercial properties.",
-  "sameAs": [
-    "https://www.google.com/maps?cid=1003965735745649222"
-  ],
-  "potentialAction": {
-    "@type": "ViewAction",
-    "target": "https://www.google.com/maps?cid=1003965735745649222"
-  }
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://txlsac-main.github.io/hvac-services-brownsville/",
+      "name": "Complete HVAC Services Guide – Brownsville TX",
+      "description": "Complete HVAC services in Brownsville TX. AC repair, heating, installation, maintenance, and duct cleaning for residential and commercial properties.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "Texas Lone Star AC & Heating LLC"
+      },
+      "potentialAction": {
+        "@type": "ViewAction",
+        "target": "https://www.google.com/maps?cid=1003965735745649222"
+      },
+      "mainEntity": {
+        "@id": "https://txlsac-main.github.io/hvac-services-brownsville/"
+      }
+    },
+    {
+      "@type": "HVACBusiness",
+      "@id": "https://txlsac-main.github.io/hvac-services-brownsville/",
+      "name": "Texas Lone Star AC & Heating LLC – Brownsville",
+      "description": "Texas Lone Star AC & Heating LLC provides full-spectrum HVAC services in Brownsville, TX. Services include AC repair, heating installation, duct cleaning, energy efficiency audits, and more — all available 24/7.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "20 E Elizabeth St STE A & B",
+        "addressLocality": "Brownsville",
+        "addressRegion": "TX",
+        "postalCode": "78520",
+        "addressCountry": "US"
+      },
+      "openingHours": "24/7",
+      "areaServed": "Brownsville TX",
+      "serviceType": [
+        "AC Repair",
+        "Heater Repair",
+        "HVAC Installation",
+        "Duct Cleaning",
+        "Energy Efficiency Audits",
+        "Insulation Inspections",
+        "AC Maintenance",
+        "Heater Maintenance",
+        "Emergency HVAC Services"
+      ],
+      "availableLanguage": ["English", "Spanish"],
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 25.9028713,
+        "longitude": -97.4706776
+      },
+      "sameAs": [
+        "https://www.google.com/maps?cid=1003965735745649222"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "HVAC Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Emergency AC Repair",
+              "description": "24/7 emergency air conditioning repair service for residential and commercial systems"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Heater Installation",
+              "description": "Professional furnace and heater installation for energy-efficient heating solutions"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Duct Cleaning",
+              "description": "Thorough cleaning of air ducts to improve air quality and HVAC performance"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Energy Efficiency Audit",
+              "description": "Comprehensive inspections to identify energy-saving opportunities in HVAC systems"
+            }
+          }
+        ]
+      }
+    }
+  ]
 }
 </script>
 </body>
